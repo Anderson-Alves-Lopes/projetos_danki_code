@@ -20,11 +20,20 @@
               <nav class="desktop">
                   <ul>
                       <li class="selected"><span></span><a href="#">Invisalign</a></li>
-                      <li><span></span><a href="#">Benefícios</a></li>
-                      <li><span></span><a href="#">Serve para mim</a></li>
-                      <li><span></span><a href="#">Contato</a></li>
+                      <li><span></span><a href="#beneficios">Benefícios</a></li>
+                      <li><span></span><a href="#serve">Serve para mim</a></li>
+                      <li><span></span><a href="#contato">Contato</a></li>
                   </ul>
               </nav>
+              <nav class="mobile">
+                  <h3><i class="fa fa-bars"></i></h3>
+                <ul>
+                    <li><span></span><a href="#">Invisalign</a></li>
+                    <li><span></span><a href="#beneficios">Benefícios</a></li>
+                    <li><span></span><a href="#serve">Serve para mim</a></li>
+                    <li><span></span><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
               <div class="telefone-header">
                   <span>(48) 3222-6591</span>
               </div>
@@ -53,7 +62,7 @@
             </div><!---container-->
           </div><!--content-header-->
         </section><!--header-master-->
-        <section class="diferenciais">
+        <section id="beneficios" class="diferenciais">
            <div class="container">
             <div class="diferencial-single">
                 <img src="images/icones/icone04.png">
@@ -110,7 +119,7 @@
             <p>Invisalign</p>          
           </div><!---container-->
         </section><!--depoimento-->
-        <section class="etapas">
+        <section id="serve" class="etapas">
          <div class="container">
              <h2>Sem dúvidas,<b>serve pra você!</b>
                <br> Veja como funciona:</h2>
@@ -199,6 +208,94 @@
          <div class="clear"></div>
          </div><!---container-->
         </section><!--etapas-->
+        <section class="diferencas">
+          <div class="container">
+          <div class="diferencas__single">
+           <h2>Tradicional</h2>
+           <div class="item-diferencas-1">
+               <div class="line-diferencas-1"></div>
+                   <span>Aparelho fixo</span>
+           </div><!--item-1-->
+           <div></div>
+           <div class="item-diferencas-1">
+            <div class="line-diferencas-1"></div>
+                <span>Acumula sujeira</span>
+        </div><!--item-1-->
+        <div></div>
+        <div class="item-diferencas-1">
+            <div class="line-diferencas-1"></div>
+                <span>Incomoda esteticamente</span>
+        </div><!--item-1-->
+        <div class="item-diferencas-1">
+            <div class="line-diferencas-1"></div>
+                <span>Demora a ver resultados</span>
+        </div><!--item-1-->
+        <div></div>
+        <div class="item-diferencas-1">
+            <div class="line-diferencas-1"></div>
+                <span>Atrapalha comer</span>
+        </div><!--item-1-->
+        <div></div>
+        <div class="item-diferencas-1">
+            <div class="line-diferencas-1"></div>
+                <span>Desconfortável</span>
+        </div><!--item-1-->
+    </div><!--diferencas__single-->
+        <div class="diferencas__single">
+            <img src="images/invisalign.jpg">
+            <div class="item-diferencas-2">
+                    <span>Complatamente móvel</span>
+            </div><!--item-1-->
+            
+            <div class="item-diferencas-2">
+                 <span>Tira para comer e pode lavar</span>
+         </div><!--item-1-->
+         <div class="item-diferencas-2">
+                 <span><b>100% Transparente</b></span>
+         </div><!--item-1-->
+         <div class="item-diferencas-2">
+                 <span>Resultados rápidos</span>
+         </div><!--item-1-->
+         <div class="item-diferencas-2">
+                 <span>Muito confortáveis</span>
+         </div><!--item-1-->
+         <div class="item-diferencas-2">
+                 <span>Gengivas mais saudáveis</span>
+         </div><!--item-1-->
+          </div><!--diferencas__single-->
+          <div class="clear"></div>
+          </div><!---container-->
+        </section><!--diferencas-->
+        <section id="contato" class="contato">
+         <div class="container">
+             <h2>Entre em contato</h2>
+             <p>Telefone: (48) 3222-6591</p>
+             <p>Email: contato@monguilhott.com.br</p>
+             <p>Endereço:Avenida Rio Branco, 354 Edifício Maxim's 3° Andar /Sala 301 - Florianópolis/SC</p>
+             <form>
+                 <div class="form-group">
+                     <input placeholder="*Nome" type="text" name="nome" required>
+                 </div>
+                 <div class="form-group">
+                    <input placeholder="*E-mail" type="text" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input placeholder="*Telefone/Celular" type="text" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Deixe sua mensagem" name="mensagem"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="acao" value="Enviar!">
+                </div>
+             </form>
+         </div><!---container-->
+        </section><!--contato-->
+        <footer>
+            <div class="container">
+            <img src="images/logo.png">
+        </div>
+        </footer>
         <script src="js/jquery.js"></script>
         <script src="js/functions.js"></script>
     </body>
