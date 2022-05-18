@@ -32,12 +32,23 @@
                <li><a href="">Minha Lista</a></li>
            </ul>
           </div><!--menu-header-->
+          <div class="menu-mobile">
+            
+            <a><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <li><a href="">Início</a></li>
+                <li><a href="">Séries</a></li>
+                <li><a href="">Filmes</a></li>
+                <li><a href="">Adicionados Recentemente</a></li>
+                <li><a href="">Minha Lista</a></li>
+            </ul>
+           </div><!--menu-mobile-->
         </div><!--header-left-->
         <div class="header-right">
              <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
              </div><!--search-->
-             <a href="#">INFANTIL</a>
+             <a class="infantil" href="#">INFANTIL</a>
              <a href="#"><i class="fa-solid fa-gift"></i></a>
              <div class="notifications">
                  <div class="circle-notifications">
@@ -57,7 +68,7 @@
       </video>
         <div class="overlay"></div>
         <div class="texto-destaque">
-          <h2>Cavaleiros do Zodiaco</h2>
+          <h2>Argueiro</h2>
           <h3>Assista a 9 temporada agora!</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <br>
@@ -163,6 +174,13 @@
     <script src="js/slick.min.js"></script>
   
     <script>
+$(function(){
+
+$('.menu-mobile').click(function(){
+  $('.menu-mobile').find('ul').slideToggle(700);
+})
+})
+
       $('.vitrine-flex').slick({
     dots: false,
     arrows:false,

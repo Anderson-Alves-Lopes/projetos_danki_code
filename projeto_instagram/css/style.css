@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+}
+html,body{
+    height:100%;
+}
+body{
+    background-color: rgb(245,245,245);
+}
+.center{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 2%;
+}
+.clear{
+    clear:both;
+}
+header{
+    background-color:#fff;
+    
+}
+header > .center{
+    display:flex;
+}
+.logo-header{
+    width:30%;
+}
+
+.logo-header img{
+    width:100%;
+    max-width:180px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.search{
+    width:50%;
+    text-align: center;
+    padding-top:15px;
+}
+.search-box{
+    position:relative;
+    display:inline-block;
+    
+}
+.search-box > i{
+    position:absolute;
+    left:40px;
+    top:5px;
+    opacity: 0.3;
+   
+}
+.search-box input{
+    background-color: rgb(245,245,245);
+    padding:5px 10px;
+    border:1px solid #ccc;
+    text-align: center;
+    width:200px;
+    outline: none;
+
+}
+.notifications-icons{
+    width:20%;
+    text-align: right;
+    padding-top:20px;
+}
+.notifications-icons a{
+    text-decoration: none;
+    color:#111;
+    font-size: 23px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    display: inline-block;
+}
+.notifications-icons .img-miniatura{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-size:100% 100%;
+    background-position: top ;
+    display: inline-block;
+    position:relative;
+    top:5px;
+}
+.img-perfil-wraper{
+    float:left;
+    width:50%;
+    min-height: 300px;
+    
+   
+}
+.borda{
+    width:40%;
+    height:200px;
+    min-height: 100%;
+    border-radius:50%;
+    padding:4px;
+    border: 2px solid #ccc;
+    margin:0 auto;
+}
+.img-perfil{
+    background-size:110% 110%;
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border: 1px solid #ccc;
+}
+.texto-perfil{
+    float:left;
+    width:50%;
+}
+.nome-perfil span{
+    font-size:23px;
+    font-weight:300;
+}
+.nome-perfil a{
+    text-decoration:none;
+    color:#111;
+    font-size: 25px;
+    
+}
+.nome-perfil .btn-primario{
+    border:1px solid #dbdbdb;
+    padding:4px 10px;
+    margin:0 10px;
+    font-size: 16px;
+}
+.info-perfil{
+    display: inline-block;
+    margin-top:20px;
+}
+.info-perfil p{
+    display:inline-block;
+    margin-right: 10px;
+    
+}
+.descricao-perfil h3{
+    font-size:20px;
+}
+.descricao-perfil p{
+    font-size:16px;
+    font-weight:300;
+    margin-top:8px;
+}
+section.slider > .center{
+    display:flex;
+    flex-wrap:nowrap;
+    width:100%;
+    
+}
+.img-perfil-slider{
+    width:calc(100% / 7);
+    text-align: center;
+
+    
+   
+}
+.img-perfil-slider p{
+    font-size: 15px;
+    padding:10px 0;
+
+}
+.borda-slider{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    padding:2px;
+    border: 2px solid #ccc;
+    margin:0 auto;
+}
+.img-slider{
+    background-size:110% 110%;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border: 1px solid #ccc;
+}
+section.feed{
+    padding:60px 0;
+}
+.line-feed{
+    border-top:1px solid #ccc;
+    text-align:center;
+}
+.line-marcacao{
+    display:none;
+    position:absolute;
+    top:-10px;
+    width:100px;
+    height:1px;
+    background-color:#111;
+    
+}
+.single-line-name{
+    display:inline-block;
+    margin: 10px 15px;
+    text-transform:uppercase;
+    font-size:15px;
+    font-weight:300;
+    cursor:pointer;
+    position:relative;
+
+}
+.publicacao-single{
+    float:left;
+    width:33.3%;
+    padding-top:25%;
+    background-size:100% 100%;
+    border:4px solid #fff;
+}
+#igtv,
+#salvos,
+#marcacoes{
+    display:none;
+}
+@media screen and (max-width: 768px){
+    section.slider > .center{
+        flex-wrap: wrap;
+    }
+    .img-perfil-slider{
+        width:33.3%;
+        text-align: center;
+        margin-bottom:15px;
+        
+        
+       
+    }
+}
+@media screen and (max-width:580px){
+    .search-box{
+        display:none;
+    }
+    .notifications-icons{
+        padding-top:8px;
+    }
+}
+.img-perfil-slider{
+    width:33.3%;
+    text-align: center;
+    margin-bottom:15px;
+    
+   
+}
